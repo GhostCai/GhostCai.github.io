@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>gen</title>
+</head>
+<meta charset="utf-8">
+
+<script type="text/javascript">
+
+function doit(){
+	var name = na.value; 
+	var suffix = sf.value; 
+	suffix = suffix.split("").reverse().join(""); 
+	document.writeln(name + "&#8238;" + suffix + "&#8237;");  
+}
+</script>
+<body>
+
+<p>名字：</p>
+<input type="text" id="na" value=""/>
+<br></br>
+<p>后缀：</p>
+<input type="text" id="sf" value=""/>
+<br></br>
+<button onclick="doit()">生成</button>
+</body>
+</html>
